@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftarkhwan - Meeting Rooms</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/Daftarkhwan Logo_Clearspace_White.webp" alt="Daftarkhwan Logo" class="logo-img">
+            </div>
+            <nav>
+                <ul>
+                    <li class="dropdown" id="locations">
+                        <a href="#">Locations</a>
+                        <ul class="dropdown-content" id="city-options">
+                            <li>City 1</li>
+                            <li>City 2</li>
+                            <li>City 3</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown" id="services">
+                        <a href="#">Services</a>
+                        <ul class="dropdown-content" id="service-options">
+                            <li>Service 1</li>
+                            <li>Service 2</li>
+                            <li>Service 3</li>
+                            <li>Service 4</li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Partnerships</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="cta">
+                <button id="bookTourButton">Book A Tour</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="mid-section">
+            <section class="meeting-rooms">
+                <h1>Meeting Rooms</h1>
+                <p>Daftarkhwan is equipped with luxurious multi-purpose meeting spaces. Our meeting space varies in size, from a meeting room for four to a state of the art conference room for ten and expansive boardrooms with brilliant views. Our easily-bookable meeting space is available to both our community of members and external clients.
+
+ 
+
+                    We provide you with all the tools you need to conduct a successful meeting. From glass whiteboards and high speed internet to Smart TVs for virtual participants and presentations, join our meeting space and amplify your team’s collaboration.
+                    
+                    Impress and host investors and clients in a professional meeting space, giving your business additional credibility. From when they first step foot into the office, to front desk services and refreshments, we’ve got you covered. 
+                    
+                    Run the smoothest meetings by booking meeting space hours from our easy to use app, showing real-time availability or by simply calling reception if you’re already a member. </p>
+            </section>
+            <section class="gallery">
+                <div class="image-gallery">
+                    <img src="images/room1.jpg" alt="Meeting Room 1" class="gallery-img">
+                    <img src="images/room2.jpg" alt="Meeting Room 2" class="gallery-img">
+                    <img src="images/room3.jpg" alt="Meeting Room 3" class="gallery-img">
+                    <img src="images/room4.jpg" alt="Meeting Room 4" class="gallery-img">
+                    <img src="images/room5.jpg" alt="Meeting Room 5" class="gallery-img">
+                    <img src="images/room6.jpg" alt="Meeting Room 6" class="gallery-img">
+                </div>
+            </section>
+        </div>
+        <button class="booking-btn">Book Now</button>
+
+        <section class="amenities">
+            <h2>Amenities of meeting rooms</h2>
+            <div class="amenity">
+                <img src="staff-icon.png" alt="Staff Icon" class="amenity-icon">
+                <h3>Staff</h3>
+                <p>Headed by our Community Executive, our team looks after all your administrative needs.</p>
+            </div>
+            <div class="amenity">
+                <img src="wifi-icon.png" alt="WiFi Icon" class="amenity-icon">
+                <h3>WiFi</h3>
+                <p>High-speed WiFi with a stable connection, ensuring your workflow doesn’t break.</p>
+            </div>
+        </section>
+    </main>
+
+    <div class="modal" id="tourModal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <h2>Book A Tour</h2>
+            <form id="tourForm">
+                <input type="text" id="name" placeholder="Name" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="tel" id="phone" placeholder="Phone" required>
+                <input type="text" id="location" placeholder="Location" required>
+                <button type="submit">Submit</button>
+            </form>
+            <p id="message" class="message"></p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <ul>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Blogs</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Landlords</a></li>
+            </ul>
+            <div class="contact">
+                <p>Contact: 111-323827</p>
+                <p>Email: <a href="mailto:hello@daftarkhwan.com">hello@daftarkhwan.com</a></p>
+            </div>
+            <div class="subscribe">
+                <h4>Subscribe</h4>
+                <input type="email" placeholder="Enter your email">
+                <button>Subscribe</button>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
